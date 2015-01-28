@@ -111,9 +111,33 @@ class LinkedList {
        return result;
     }
 
+    
+    public void insertHead(int data) {
+        Node newElem = new Node(data);
+        newElem.next = header;
+        header = newElem;
+
+        return;
+    }
+
+    public void insertElement(int elem, int data) {
+        Node newElem = new Node(data);
+        Node current = header;
+
+        while (current != null) {
+            if(current.data == elem) {
+               newElem.next = current.next;
+               current.next = newElem;
+            }
+   
+            current = current.next;
+        }
+        return;
+    }
+
     //InsertAfter
 
-    //InsertBefore
+    
 
     
 }
