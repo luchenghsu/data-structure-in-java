@@ -23,21 +23,23 @@ class LinkedList {
         }
     }
 
-    public Node deleteNode(int d) {
-        Node n = this.header;
+    public void deleteNode(int d) {
+        Node n = header;
 
         if (n.data == d) {
-            return header.next;
+            header = header.next;
+            return;
         }
         while (n.next != null) {
             if (n.next.data == d) {
                 n.next = n.next.next;
-                return header;
+                return;
             }
             n = n.next;
         }
-        return n;
+        return;
     }
+
 
     /*
        Without a buffer, we can iterate with two pointers: 
