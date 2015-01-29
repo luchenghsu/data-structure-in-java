@@ -17,7 +17,7 @@ class Stack {
     }
 
     public String toString() {
-        String result = "\n";
+        String result = "\nit";
         if (top == null) return result;
 
         while(top.next != null) {
