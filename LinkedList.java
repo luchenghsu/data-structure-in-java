@@ -114,7 +114,7 @@ class LinkedList {
     }
 
     
-    public void insertHead(int data) {
+    public void preppend(int data) {
         Node newElem = new Node(data);
         newElem.next = header;
         header = newElem;
