@@ -23,6 +23,7 @@ class Util {
         return new String(str).substring(0, tail); 
     }
 
+
     /*
        Input (3->1->5), (5->9->2)
        Output: 8->0->8
@@ -68,6 +69,26 @@ class Util {
 
         return result;
 
+    }
+
+    public static Node nthToLast(LinkedList l, int n) {
+        if (l == null || n < 1) return null;
+
+        Node p1 = l.header;
+        Node p2 = l.header;
+
+        for (int j = 0; j < n-1; ++j) {
+            if (p2 == null) return null;
+
+            p2 = p2.next;
+        }
+
+        while(p2.next != null) {
+            p1 = p1.next;
+            p2 = p2.next;
+        }
+
+        return p1;
     }
 
 }
