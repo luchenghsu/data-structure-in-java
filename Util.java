@@ -23,6 +23,47 @@ class Util {
         return new String(str).substring(0, tail); 
     }
 
+    public static String removeDuplicatesEff(char[] str) {
+        return "";
+    }
+
+    public static boolean isUniqueChars(String s) {
+        return true;
+    }    
+
+    public static boolean isUniqueChars2(String s) {
+        return true;
+    }
+
+    public static boolean anagram(String s1, String s2) {
+        return true;
+    }
+
+    public static void ReplaceFun(char[] str, int length) {
+
+    }
+
+    public static String reverseWords(String s) {
+        return ""; 
+    }
+
+    public static boolean isSubstring(String s1, String s2) {
+        return true;
+    }
+
+    //"waterbottle" is a rotation of "erbottlewat"
+    public static boolean isRotation(String s1, String s2) {
+        
+        return true;
+    }
+
+    public static void rotate(int[][] matrix, int n) {
+
+    }
+
+    public static void setZeros(int[][] matrix) {
+        
+    }
 
     /*
        Input (3->1->5), (5->9->2)
@@ -90,5 +131,8 @@ class Util {
 
         return p1;
     }
+
+    
+    
 
 }
